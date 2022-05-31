@@ -11,11 +11,20 @@ public class Forecast {
     public Forecast() {
     }
 
+    @Override
+    public String toString() {
+        return "Today weather in " + city + " :\n\n" +
+                "-Weather : " + weather.get(0).getDescription() +
+                "\n-Temperature : " + main.getTemp() + "°C" +
+                "\n-Minimum temperature : " + main.getTemp_min() + "°C" +
+                "\n-Maximum  : " + main.getTemp_max() + "°C" +
+                "\n-Humidity : " + main.getHumidity() + "%" +
+                "\n-Wind : " + wind.getSpeed() + " m/s at " + wind.getDeg() + "°";
+    }
+
     public Main getMain() {
         return main;
     }
-
-
 
     public void setMain(Main main) {
         this.main = main;

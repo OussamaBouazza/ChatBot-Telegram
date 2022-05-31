@@ -8,7 +8,7 @@ public class ClientRestTest {
 	public static void main(String[] args) {
 		RestTemplate restTemplate = new RestTemplate();
 
-		Forecast f = restTemplate.getForObject("http://localhost:9090/weather?city=Paris", Forecast.class);
-		System.out.println(f);
+//		Forecast f = restTemplate.getForObject("http://localhost:9090/weather?city=Paris", Forecast.class);
+//		System.out.println(f);
 	}
 }
