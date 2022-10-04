@@ -20,7 +20,6 @@ public class MessageRestController {
 	private String telegramToken;
 	static RestTemplate restTemplate = new RestTemplate();
 
-	//Token: 5348334660:AAGeyqcd-6MqfuhFhElqoZYsjKCHeboiQZM
 	//Opérations sur la ressource Message
 
 	@GetMapping
